@@ -465,7 +465,7 @@ main {
   cursor: pointer;
   /* Gray */
   margin-top: 40px;
-  width: 40%;
+  width: 150px;
   color: #FAFBFF;
   transition: 0.2s;
 }
@@ -707,7 +707,7 @@ main {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-
+  margin-left: 20px;
   /* Gray */
 
   color: #FAFBFF;
@@ -910,6 +910,33 @@ main {
 }
 
 
+.modal__wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(12, 21, 35, 0.303);
+}
+
+.modal__wrapper--active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.modal__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  font-size: 40px;
+}
+
 @media (max-width: 1085px) {
   .header__content {
     display: none;
@@ -922,6 +949,21 @@ main {
   }
   .navbar__right-text {
     color: black;
+  }
+}
+
+@media (max-width: 922px) {
+  .marketplace__info-btn {
+    margin-top: 20px;
+  }
+  .marketplace__info {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 750) {
+  .features__card-template-btn {
+    width: 100%;
   }
 }
 
